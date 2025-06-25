@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Banner Section */
+.banner {
+  background: url('images/banner.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 50px;
+  color: black;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: 36px;
+}
+
+.banner p {
+  font-size: 20px;
+}
+
+.offers img {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+}
+
+/* Products Section */
+.product-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Cart Section */
+#cart {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+#cart h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cart ul li {
+  padding: 5px 0;
+}
+
+#checkout-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#checkout-btn:hover {
+  background: #555;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #f8f8f8;
+  border-top: 1px solid #ccc;
+}

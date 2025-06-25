@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .banner {
+      background: url('images/banner.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 50px;
+      color: black;
+      text-align: center;
+    }
+
+    .offers img {
+      width: 150px;
+      height: auto;
+      margin: 10px;
+    }
+
+    .product-list {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .product p {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BuyBuddy</h1>
+    <nav>
+      <a href="#welcome">Home</a>
+      <a href="#products">Products</a>
+      <a href="#cart">Cart</a>
+      <a href="#offers">Offers</a>
+    </nav>
+  </header>
+
+  <section id="welcome" class="banner">
+    <h2>Welcome to BuyBuddy!</h2>
+    <p>Today's Special Offers</p>
+    <div class="offers">
+      <img src="images/offer1.jpg" alt="Offer 1">
+      <img src="images/offer2.jpg" alt="Offer 2">
+      <img src="images/offer3.jpg" alt="Offer 3">
+    </div>
+  </section>
+
+  <main>
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="images/laptop.jpg" alt="Laptop">
+          <h3>High-Performance Laptop</h3>
+          <p>₹99,000</p>
+        </div>
+        <div class="product">
+          <img src="images/headphones.jpg" alt="Headphones">
+          <h3>Noise-Cancelling Headphones</h3>
+          <p>₹20,000</p>
+        </div>
+        <div class="product">
+          <img src="images/smartphone.jpg" alt="Smartphone">
+          <h3>Smartphone Pro Max</h3>
+          <p>₹85,000</p>
+        </div>
+        <div class="product">
+          <img src="images/smartwatch.jpg" alt="Smartwatch">
+          <h3>Stylish Smartwatch</h3>
+          <p>₹16,000</p>
+        </div>
+        <div class="product">
+          <img src="images/camera.jpg" alt="Camera">
+          <h3>DSLR Camera</h3>
+          <p>₹62,000</p>
+        </div>
+        <div class="product">
+          <img src="images/tablet.jpg" alt="Tablet">
+          <h3>Lightweight Tablet</h3>
+          <p>₹40,000</p>
+        </div>
+        <div class="product">
+          <img src="images/speaker.jpg" alt="Speaker">
+          <h3>Bluetooth Speaker</h3>
+          <p>₹8,000</p>
+        </div>
+        <div class="product">
+          <img src="images/keyboard.jpg" alt="Keyboard">
+          <h3>Mechanical Keyboard</h3>
+          <p>₹7,500</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: ₹<span id="cart-total">0.00</span></p>
+      <button id="checkout-btn">Checkout</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Buybuddy. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
